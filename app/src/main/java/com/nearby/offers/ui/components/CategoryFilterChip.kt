@@ -6,12 +6,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.nearby.offers.model.NearbyCategory
 
 
-@Preview
-@Composable
-private fun NearbyCategoryFilterChipPreview() {
-    NearbyCategoryFilterChip()
-}
-
 @Composable
 fun NearbyCategoryFilterChip (
     modifierBtn: Modifier = Modifier,
@@ -19,5 +13,12 @@ fun NearbyCategoryFilterChip (
     isSelected : Boolean,
     onClick: (isSelected: Boolean) -> Unit
 ) {
-    
+
+}
+
+
+@Preview
+@Composable
+private fun NearbyCategoryFilterChipPreview() {
+   // NearbyCategoryFilterChip()
 }

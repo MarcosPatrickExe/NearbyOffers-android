@@ -8,5 +8,5 @@ data class NearbyCategory(
 ){
 
     @get:DrawableRes // simboliza que o retorno de Get reprenta um Id de resource do projeto
-    val icon: Int? get() = NearbyCategoryFilterChipView.fromDescription( description = name)?.icon
+    val icon: Int? get() = NearbyCategoryFilterChipView.fromDescription( descriptionToBeChecked = name )?.icon
 }

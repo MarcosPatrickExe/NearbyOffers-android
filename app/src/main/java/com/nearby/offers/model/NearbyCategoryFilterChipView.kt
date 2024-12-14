@@ -5,7 +5,7 @@ import com.nearby.offers.R
 
 enum class NearbyCategoryFilterChipView (
     val description :String,
-    @DrawableRes icon : Int
+    @DrawableRes val icon : Int?
 ){
     ALIMENTACAO( description = "Alimentação", icon= R.drawable.ic_tools_kitchen_2 ),
     COMPRAS( description = "Compras", icon= R.drawable.ic_shopping_bag ),
@@ -14,6 +14,12 @@ enum class NearbyCategoryFilterChipView (
     ENTRETENIMENTO( description = "Cinema", icon= R.drawable.ic_movie ),
     FARMACIA( description = "Farmácia", icon= R.drawable.ic_first_aid_kit ),
     COMBUSTIVEL( description = "Combustível", icon= R.drawable.ic_gas_station ),
-    PADARIA( description = "Padaria", icon= R.drawable.ic_bakery ),
+    PADARIA( description = "Padaria", icon= R.drawable.ic_bakery );
+
+    companion object{
+        fun fromDescription( descriptionToBeChecked: String ): NearbyCategoryFilterChipView? {
+            return entries.find { it.description == descriptionToBeChecked }
+        }
+    }
 
 }
