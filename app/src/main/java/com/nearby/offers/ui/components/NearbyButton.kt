@@ -91,7 +91,7 @@ private fun NearbyButtonOnlyText () {
     )
 }
 
-@Preview // annotation responsavel por fazer o preview de uma funcao @composable
+@Preview
 @Composable
 private fun NearbyButtonOnlyIcon () {
     NearbyButton(
