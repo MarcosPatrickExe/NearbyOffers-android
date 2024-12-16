@@ -82,7 +82,7 @@ private fun NearbyCategoryFilterChipPreview() {
 
 @Preview
 @Composable
-private fun NearbyCategoryFilterChipPreview2() {
+private fun NearbyCategoryFilterChipPreviewNoSelected() {
 
     NearbyCategoryFilterChip(
         category = NearbyCategory( id = "1", name ="Combustível" ),
