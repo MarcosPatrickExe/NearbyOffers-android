@@ -19,7 +19,7 @@ private val LightColors = lightColorScheme(
     onError = Color.White
 )
 
-private val DarkColors =  darkColorScheme(
+private val DarkColors = darkColorScheme(
     primary = GreenLight,
     onPrimary = Color.Black,
     secondary = RedLight,

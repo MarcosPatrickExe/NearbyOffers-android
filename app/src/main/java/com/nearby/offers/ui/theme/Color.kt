@@ -2,6 +2,10 @@ package com.nearby.offers.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
+enum class Teste{
+    TEST, abc, a;
+}
+
 val GreenLight = Color(0xFF3B9B62)
 val GreenBase = Color(0xFF257F49)
 val GreenDark = Color(0xFF052914)

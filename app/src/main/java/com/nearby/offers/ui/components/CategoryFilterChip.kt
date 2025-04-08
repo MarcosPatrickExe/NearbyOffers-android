@@ -27,6 +27,8 @@ fun NearbyCategoryFilterChip (
     isSelected : Boolean,
     onClickEvent: (isSelected: Boolean) -> Unit
 ) {
+    var test: String = String().plus( true )
+
     FilterChip(
         selected = isSelected,
         modifier = modifierBtn.padding( 2.dp).heightIn( min= 36.dp),
