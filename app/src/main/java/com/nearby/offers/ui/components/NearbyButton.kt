@@ -30,7 +30,7 @@ val defaultAction: () -> Unit = { println("Ação padrão executada") }
 
 @Composable
 fun NearbyButton (
-    modifierBtn: Modifier = Modifier,
+    modifierBtn: Modifier = Modifier, // responsavel pelo controle do comportamente e caracteristica visual e decorativas dos elementos
     textBtn : String? = null,
     @DrawableRes iconRes: Int? = null,  // somente recebe elementos Drawable da pasta 'Res' do Android
     onClickBtn : (() -> Unit)?
@@ -55,7 +55,7 @@ fun NearbyButton (
                             contentDescription = "Ícone do botão"
                         )
                     }
-                    textBtn?.let {
+                    textBtn?.let { // se texto nao for nulo, entao o codigo abaixo eh executado
                         Text(
                             text = textBtn.uppercase(),
                             style = com.nearby.offers.ui.theme.Typography.labelLarge

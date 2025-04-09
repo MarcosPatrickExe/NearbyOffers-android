@@ -17,8 +17,8 @@ enum class NearbyCategoryFilterChipView (
     PADARIA( description = "Padaria", icon= R.drawable.ic_bakery );
 
     companion object{
-        fun fromDescription( descriptionToBeChecked: String ): NearbyCategoryFilterChipView? {
-            return entries.find { it.description == descriptionToBeChecked }
+        public fun fromDescription( descriptionToBeChecked: String ): NearbyCategoryFilterChipView? {
+            return entries.find { et -> et.description == descriptionToBeChecked }
         }
     }
 
