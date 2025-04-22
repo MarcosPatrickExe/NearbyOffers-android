@@ -1,6 +1,6 @@
 package com.nearby.offers
  
-import org.junit.Test
+import org.junit.Test 
 
 import org.junit.Assert.*
 
