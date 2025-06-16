@@ -27,7 +27,7 @@ fun NearbyCategoryFilterChip (
     isSelected : Boolean,
     onClickEvent: (isSelected: Boolean) -> Unit
 ) {
-    var test: String = String().plus( true )
+    var test: String = String().plus( true ) // only test
 
     FilterChip(
         selected = isSelected,
@@ -42,7 +42,7 @@ fun NearbyCategoryFilterChip (
         elevation = FilterChipDefaults.filterChipElevation( elevation = 8.dp), // adicionando sombreamento
         leadingIcon = { category.icon?.let {
             Icon(
-                modifier = Modifier.size(16.dp),
+                modifier = androidx.compose.ui.Modifier.size(16.dp),
                 painter = painterResource( id = it),
                 contentDescription = "Ícone de Filtro de cadategoria",
                 tint = if (isSelected) Color.White else Gray400,
@@ -79,7 +79,6 @@ private fun NearbyCategoryFilterChipPreview() {
         isSelected = true,
         onClickEvent = { println( message= "testandoooo1")  }
     )
-
 }
 
 @Preview
