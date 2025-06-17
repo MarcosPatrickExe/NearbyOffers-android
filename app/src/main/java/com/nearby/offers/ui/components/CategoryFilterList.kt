@@ -19,19 +19,20 @@ fun CategoryFilterList(
     onSelectedCategoryChanged: ( variable : NearbyCategory) -> Unit
 ) {
 
-    var selectedCategoryId by remember {
+    var selectedCategoryId by remember {  // remember ira lembrar do conteudo previamente setado nas variaveis para registrar o State do app, evitando recomposicoes desnecessarias
         mutableStateOf( value = categories.firstOrNull<NearbyCategory>()?.id.orEmpty() ) // se id for nulo, sera retornada uma string vazia do 'orEmpty()'
+        // 'mutableStateOf' Cria um estado observável (o Compose sabe que precisa redesenhar se o valor mudar)
     }
 
+    // Faz o bloco ser executado toda vez que 'selectedCategoryId' mudar
     LaunchedEffect( key1 = selectedCategoryId ) // 'selectedCategoryId' eh a variavel que quando alterada, ira disparar o callback na propriedade '' abaixo:
     {
         val selectedCategoryOrNull = categories.find { it.id == selectedCategoryId }
+
         selectedCategoryOrNull?.let{ // se nao for nulo, o codigo do bloco 'let' abaixo sera executado:
             onSelectedCategoryChanged( it) // ativa do disparo que indica a alteracao da variavel 'categoria'
         }
-        onSelectedCategoryChanged
     }
 
-    // remember ira lembrar do conteudo previamente setado nas variaveis para registrar o State do app, evitando recomposicoes desnecessarias
 
 }

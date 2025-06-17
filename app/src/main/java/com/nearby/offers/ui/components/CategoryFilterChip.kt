@@ -1,5 +1,7 @@
 package com.nearby.offers.ui.components
 
+import android.util.Log
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -76,8 +78,12 @@ private fun NearbyCategoryFilterChipPreview() {
     NearbyCategoryFilterChip(
         category = NearbyCategory( id = "1", name ="Alimentação" ),
         isSelected = true,
-        onClickEvent = { println( message= "testandoooo1")  }
+        onClickEvent = {
+            println( message= "testandoooo1");
+            Log.d("teste", "cliclou em Alimentação")
+        }
     )
+
 }
 
 @Preview
@@ -85,9 +91,12 @@ private fun NearbyCategoryFilterChipPreview() {
 private fun NearbyCategoryFilterChipPreviewNoSelected() {
 
     NearbyCategoryFilterChip(
-        category = NearbyCategory( id = "1", name ="Combustível" ),
+        category = NearbyCategory( id = "2", name ="Combustível" ),
         isSelected = false,
-        onClickEvent = { println( message= "testandoooo1")  }
+        onClickEvent = {
+            println( message= "testandoooo1");
+            Log.d("teste", "cliclou em Combustível")
+        }
     )
 
 }
