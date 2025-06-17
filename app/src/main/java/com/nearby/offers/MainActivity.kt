@@ -22,6 +22,7 @@ import com.nearby.offers.ui.theme.NearbyTheme
 
 
 class MainActivity : ComponentActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge();
