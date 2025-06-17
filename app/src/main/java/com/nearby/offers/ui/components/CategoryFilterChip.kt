@@ -64,7 +64,6 @@ fun NearbyCategoryFilterChip (
                 color = if (isSelected) Color.White else Gray400,
             )
         }
-
     )
 }
 
