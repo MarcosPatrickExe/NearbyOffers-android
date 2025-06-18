@@ -83,8 +83,9 @@ private fun NearbyCategoryFilterChipPreview() {
             Log.d("teste", "cliclou em Alimentação")
         }
     )
-
 }
+
+
 
 @Preview
 @Composable
