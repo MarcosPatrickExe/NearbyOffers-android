@@ -56,6 +56,7 @@ fun NearbyCategoryFilterList(
                 category = thisCategory, // NearbyCategory( id = "1", name ="Alimentação" ),
                 isSelected = (thisCategory.id == selectedCategoryId ),
                 onClickEvent = { isSelected ->{
+                    Log.d("teste", "======> CATEGORY: "+thisCategory.name+"  ===  isSelected: "+isSelected);
                     if( isSelected ) selectedCategoryId = thisCategory.id
                  }
 
@@ -63,7 +64,6 @@ fun NearbyCategoryFilterList(
             )
         }
     }
-
 
 }
 
