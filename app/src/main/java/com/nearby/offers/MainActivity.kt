@@ -48,7 +48,8 @@ class MainActivity : ComponentActivity() {
             NearbyTheme {
                 Scaffold( modifier = Modifier.fillMaxSize()) { innerPadding :PaddingValues ->
 
-                    Column( modifier = Modifier
+                    Column(
+                        modifier = Modifier.fillMaxSize()
                         .fillMaxSize()
                         .padding(innerPadding)
                     ) {
@@ -79,6 +80,11 @@ class MainActivity : ComponentActivity() {
 
         }
     }
+}
+
+@Composable
+fun teste123(){
+    println("new message test")
 }
 
 
