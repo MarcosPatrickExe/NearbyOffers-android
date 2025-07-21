@@ -1,6 +1,7 @@
 package com.nearby.offers
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -43,7 +44,7 @@ class MainActivity : ComponentActivity() {
                 LoginScreen()
             }
 
-         */
+        */
 
         /*
             NearbyTheme (
@@ -94,14 +95,12 @@ class MainActivity : ComponentActivity() {
             };
 
 
-
-
         }
     }
 }
 
 @Composable
-fun teste123(){
+fun printMessage(){
     println("new message test")
 }
 
@@ -130,10 +129,13 @@ fun GreetingPreview() {
 }
 
 
+
 @Composable
 fun LoginScreen() {
     var email by remember { mutableStateOf("") }
     var senha by remember { mutableStateOf( value="") }
+
+    Log.d(  "teste", "teste de valor");
 
     Column(
         modifier = Modifier
