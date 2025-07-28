@@ -100,7 +100,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun printMessage(){
+fun printMessageTest(){
     println("new message test")
 }
 
