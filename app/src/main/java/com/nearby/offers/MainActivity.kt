@@ -102,6 +102,9 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun printMessageTest(){
     println("new message test")
+    /n
+    println("===============> ")
+
 }
 
 
