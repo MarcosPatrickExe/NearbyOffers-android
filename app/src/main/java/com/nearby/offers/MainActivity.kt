@@ -75,6 +75,8 @@ class MainActivity : ComponentActivity() {
                             modifier = Modifier.padding( innerPadding)
                         )
 
+
+
                         NearbyCategoryFilterList(
                             modifier =  Modifier.padding(innerPadding ),// Modifier.fillMaxWidth(),
                             categories = listOf(
@@ -90,6 +92,9 @@ class MainActivity : ComponentActivity() {
                                 println("clicou")
                             },
                         )
+
+                        printMessageTest();
+
                     }
                 }
             };
