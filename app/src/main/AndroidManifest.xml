@@ -15,6 +15,7 @@
         tools:targetApi="31">
  
         <!-- [at activity tag]: android:label="@string/app_name" -->
+        <!-- only acitivity for this app: -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
