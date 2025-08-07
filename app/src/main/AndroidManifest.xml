@@ -27,6 +27,8 @@
             </intent-filter>
 
         </activity>
+
+        <!-- metadatada pra carregar as fontes -->
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts"
