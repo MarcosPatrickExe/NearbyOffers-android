@@ -75,7 +75,6 @@ class MainActivity : ComponentActivity() {
                             modifier = Modifier.padding( innerPadding)
                         )
 
-
                         NearbyCategoryFilterList(
                             modifier =  Modifier.padding(innerPadding ),// Modifier.fillMaxWidth(),
                             categories = listOf(
@@ -122,7 +121,7 @@ fun Greeting( name: String, modifier: Modifier = Modifier ) {
         contentAlignment = Alignment.Center
     ) {
         Text(
-            text = "Hello $name!",
+            text = "Hello, my name is $name!",
             modifier = modifier
         )
     }
