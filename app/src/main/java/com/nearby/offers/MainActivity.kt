@@ -60,7 +60,7 @@ class MainActivity : ComponentActivity() {
             );
         */
 
-            // utilizando  Trailing Lambda Syntax no 'NearbyTheme'
+            // utilizando Trailing Lambda Syntax no 'NearbyTheme':
 
             NearbyTheme {
                 Scaffold( modifier = Modifier.fillMaxSize()) { innerPadding :PaddingValues ->
@@ -74,7 +74,6 @@ class MainActivity : ComponentActivity() {
                             name = "Android",
                             modifier = Modifier.padding( innerPadding)
                         )
-
 
 
                         NearbyCategoryFilterList(
