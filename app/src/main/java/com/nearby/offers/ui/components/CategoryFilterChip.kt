@@ -27,7 +27,7 @@ fun NearbyCategoryFilterChip (
     modifierBtn: Modifier = Modifier,
     category: NearbyCategory,
     isSelected : Boolean,
-    onClickEvent: (isSelected: Boolean) -> Unit
+    onClickEvent: (isSelected: Boolean) -> Unit,
 ) {
     var test: String = String().plus( true ) // only test
 
