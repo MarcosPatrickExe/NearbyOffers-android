@@ -29,7 +29,7 @@ fun NearbyCategoryFilterList(
 ) {
 
     var selectedCategoryId by remember {  // remember ira lembrar do conteudo previamente setado nas variaveis para registrar o State do app, evitando recomposicoes desnecessarias
-        mutableStateOf<String?>( value = categories.firstOrNull<NearbyCategory>()?.id.orEmpty() ) // se id for nulo, sera retornada uma string vazia do 'orEmpty()'
+        mutableStateOf<String>( value = categories.firstOrNull<NearbyCategory>()?.id.orEmpty() ) // se id for nulo, sera retornada uma string vazia do 'orEmpty()'
         // 'mutableStateOf' Cria um estado observável (o Compose sabe que precisa redesenhar se o valor mudar)
     }
 
@@ -59,10 +59,11 @@ fun NearbyCategoryFilterList(
                         Log.d("teste", "======> CATEGORY: "+thisCategory.name+"  ===  isSelected: "+isSelected);
                         if( isSelected ) selectedCategoryId = thisCategory.id
                      }
-
                 }
+
             )
         }
+
     }
 
 }
