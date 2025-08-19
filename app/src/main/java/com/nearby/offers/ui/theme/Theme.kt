@@ -37,11 +37,7 @@ fun NearbyTheme(
     darkTheme: Boolean = false,
     content: @Composable () -> Unit
 ) {
-    val colors = if (darkTheme) {
-        DarkColors
-    } else {
-        LightColors
-    }
+    val colors = if( darkTheme){ DarkColors } else{  LightColors  }
 
     MaterialTheme(
         colorScheme = colors,
