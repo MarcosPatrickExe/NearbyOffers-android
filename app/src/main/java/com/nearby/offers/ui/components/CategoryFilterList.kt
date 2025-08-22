@@ -34,7 +34,7 @@ fun NearbyCategoryFilterList(
     }
 
     // Faz o bloco ser executado toda vez que 'selectedCategoryId' mudar
-    LaunchedEffect( key1 = selectedCategoryId ) // 'selectedCategoryId' eh a variavel que quando alterada, ira disparar o callback na propriedade '' abaixo:
+    LaunchedEffect( key1 = selectedCategoryId ) // 'selectedCategoryId' eh a variavel que quando alterada, ira disparar o callback na propriedade 'id' abaixo:
     {
         val selectedCategoryOrNull : NearbyCategory? = categories.find { it.id == selectedCategoryId }
 
