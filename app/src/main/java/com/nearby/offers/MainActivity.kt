@@ -50,7 +50,7 @@ class MainActivity : ComponentActivity() {
             NearbyTheme {
                 Scaffold( modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
-                        name = "Android",
+                        name = "teste",
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
