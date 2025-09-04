@@ -72,7 +72,7 @@ class MainActivity : ComponentActivity() {
 
             NearbyTheme {
                 Scaffold( modifier = Modifier.fillMaxSize()) { innerPadding :PaddingValues ->
-
+                  
                     Column(
                         modifier = Modifier.fillMaxSize()
                         .fillMaxSize()
