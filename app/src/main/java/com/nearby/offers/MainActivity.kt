@@ -72,11 +72,12 @@ class MainActivity : ComponentActivity() {
 
             NearbyTheme {
                 Scaffold( modifier = Modifier.fillMaxSize()) { innerPadding :PaddingValues ->
-                  
+
+
                     Column(
                         modifier = Modifier.fillMaxSize()
-                        .fillMaxSize()
-                        .padding(innerPadding)
+                            .fillMaxSize()
+                            .padding(innerPadding)
                     ) {
                         Greeting(
                             name = "Android",
@@ -102,6 +103,11 @@ class MainActivity : ComponentActivity() {
                         printMessageTest();
 
                     }
+
+
+
+                    // printMessageTest();
+
                 }
             };
 
@@ -129,7 +135,7 @@ fun Greeting( name: String, modifier: Modifier = Modifier ) {
         contentAlignment = Alignment.Center
     ) {
         Text(
-            text = "Hello, my name is $name!",
+            text = "Hello, my name is ${name}!",
             modifier = modifier
         )
     }
