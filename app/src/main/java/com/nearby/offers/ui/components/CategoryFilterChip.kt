@@ -99,5 +99,4 @@ private fun NearbyCategoryFilterChipPreviewNoSelected() {
             Log.d("teste", "cliclou em Combustível")
         }
     )
-
 }
